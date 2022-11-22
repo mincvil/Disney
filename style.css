@@ -38,15 +38,15 @@ body {
 }
 .container2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/backralph.jfif");
+    url("./images/backralph.jfif");
 }
 .container3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/hero.jpg");
+    url("./images/hero.jpg");
 }
 .containersign {
   background-image: linear-gradient(rgba(0, 0, 0, 0.155), rgba(0, 0, 0, 0.221)),
-    url("images/signback.jpg");
+    url("./images/signback.jpg");
 }
 .navbar {
   height: 12%;
@@ -320,52 +320,52 @@ th {
   background-image: url(./images/toystory.jpeg);
 }
 .card3 {
-  background-image: url(images/raya.jpg);
+  background-image: url(./images/raya.jpg);
 }
 .card4 {
-  background-image: url(images/frozen.jpg);
+  background-image: url(./images/frozen.jpg);
 }
 .card5 {
-  background-image: url(images/zootopi.jpg);
+  background-image: url(./images/zootopi.jpg);
 }
 .card6 {
-  background-image: url(images/encanto.jpg);
+  background-image: url(./images/encanto.jpg);
 }
 .card7 {
-  background-image: url(images/big_her.jpg);
+  background-image: url(./images/big_her.jpg);
 }
 .card8 {
-  background-image: url(images/brave.jpg);
+  background-image: url(./images/brave.jpg);
 }
 .card9 {
-  background-image: url(images/beauty.jpg);
+  background-image: url(./images/beauty.jpg);
 }
 .card10 {
-  background-image: url(images/king.jpg);
+  background-image: url(./images/king.jpg);
 }
 .card11 {
-  background-image: url(images/tangled.webp);
+  background-image: url(./images/tangled.webp);
 }
 .card12 {
-  background-image: url(images/smk.jpg);
+  background-image: url(./images/smk.jpg);
 }
 .card13 {
-  background-image: url(images/tiana.jpg);
+  background-image: url(./images/tiana.jpg);
 }
 .card14 {
   background-image: url(images/Bolt_Poster.webp);
 }
 .card15 {
-  background-image: url(images/pinokio.jpeg);
+  background-image: url(./images/pinokio.jpeg);
 }
 .card16 {
-  background-image: url(images/moana.jpg);
+  background-image: url(./images/moana.jpg);
 }
 .card17 {
-  background-image: url(images/cindrella.jpg);
+  background-image: url(./images/cindrella.jpg);
 }
 .card18 {
-  background-image: url(images/Aladin.jpg);
+  background-image: url(./images/Aladin.jpg);
 }
 h5 {
   color: #fff;
