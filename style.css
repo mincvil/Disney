@@ -314,10 +314,10 @@ th {
   transition: 0.4s;
 }
 .card1 {
-  background-image: url(images/ralph.jpeg);
+  background-image: url(./images/ralph.jpeg);
 }
 .card2 {
-  background-image: url(images/toystory.jpeg);
+  background-image: url(./images/toystory.jpeg);
 }
 .card3 {
   background-image: url(images/raya.jpg);
