@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+.container,
+.container2,
+.container3 {
+  width: 94%;
+  height: 100vh;
+  padding-right: 30px;
+
+  background-position: center;
+  background-size: cover;
+}
+.containersign {
+  width: 100%;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  padding: 25px;
+  padding-left: 130px;
+  justify-content: flex-start;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/crop.jpg");
+}
+.container2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/backralph.jfif");
+}
+.container3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/hero.jpg");
+}
+.containersign {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.155), rgba(0, 0, 0, 0.221)),
+    url("/images/signback.jpg");
+}
+.navbar {
+  height: 12%;
+  display: flex;
+  padding-left: 60px;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+  padding-right: 30px;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-style: 13px;
+  color: #fff;
+  transition: 0.35s;
+}
+nav ul li a:hover {
+  transition: 0.4s;
+  opacity: 1;
+}
+.sidebar {
+  background-color: #1a1a1a;
+  width: 6.5%;
+  height: 100%;
+  padding: 20px;
+  position: fixed;
+  color: #fff;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+svg {
+  cursor: pointer;
+}
+
+.icons:hover {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.201);
+}
+
+.row {
+  height: auto;
+  padding: 16px;
+  margin-top: 5%;
+}
+.row h3 {
+  margin-left: 120px;
+  color: #fff;
+}
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.welcome {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcome2 {
+  background-color: none;
+  width: 100%;
+  height: 50vh;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  padding-left: 65px;
+}
+.text {
+  width: 68%;
+  height: auto;
+}
+.text2 {
+  width: 45%;
+  height: auto;
+  background-color: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.welcome h1,
+.welcome2 .text2 h1 {
+  color: #fff;
+  font-size: 3.5em;
+  line-height: 65px;
+}
+.welcome p,
+.welcome2 p {
+  color: #fff;
+  line-height: 22px;
+  font-size: 14px;
+}
+.someinf {
+  display: flex;
+  align-items: flex-end;
+}
+span {
+  opacity: 0.6;
+  color: #fff;
+  font-size: 12px;
+  word-spacing: 6px;
+}
+.rating-area {
+  overflow: hidden;
+  width: 210px;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
+}
+button,
+.button2 {
+  width: 180px;
+  color: #000;
+  font-size: 13px;
+  padding: 14px;
+  text-align: center;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 11px;
+  outline: none;
+  margin-top: 26px;
+  font-weight: 600;
+}
+li button {
+  width: 110px;
+  color: #000;
+  font-size: 14px;
+  padding: 11px;
+  text-align: center;
+  border: 3px solid #cab04e;
+  color: #fff;
+  background-color: #cab04e;
+  transition: 0.5s;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 26px;
+  font-weight: 600;
+}
+.button2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button a {
+  text-decoration: none;
+  color: #000;
+}
+button:hover {
+  border: 3px solid #fff;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.335);
+  transition: 0.5s;
+}
+button:hover a {
+  color: #fff;
+  transition: 0.6s;
+}
+li button:hover {
+  background-color: #b09943;
+  border: 3px solid #b09943;
+}
+.gallery_container {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.video_block {
+  width: 100%;
+  height: auto;
+  padding: 80px 75px 10px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+}
+
+table {
+  color: #fff;
+  border-spacing: 20px 0;
+}
+th {
+  text-align: right;
+}
+.card {
+  min-width: 180px;
+  min-height: 235px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 10px 15px;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-position: center;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+.card:hover {
+  box-shadow: rgba(240, 217, 14, 0.552) 0px 0px 0px 3px;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+.card1 {
+  background-image: url(/images/ralph.jpeg);+
+}
+.card2 {
+  background-image: url(/images/toystory.jpeg);
+}
+.card3 {
+  background-image: url(/images/raya.jpg);
+}
+.card4 {
+  background-image: url(/images/frozen.jpg);
+}
+.card5 {
+  background-image: url(/images/zootopi.jpg);
+}
+.card6 {
+  background-image: url(/images/encanto.jpg);
+}
+.card7 {
+  background-image: url(/images/big_her.jpg);
+}
+.card8 {
+  background-image: url(/images/brave.jpg);
+}
+.card9 {
+  background-image: url(/images/beauty.jpg);
+}
+.card10 {
+  background-image: url(/images/king.jpg);
+}
+.card11 {
+  background-image: url(/images/tangled.webp);
+}
+.card12 {
+  background-image: url(/images/smk.jpg);
+}
+.card13 {
+  background-image: url(/images/tiana.jpg);
+}
+.card14 {
+  background-image: url(/images/Bolt_Poster.webp);
+}
+.card15 {
+  background-image: url(/images/pinokio.jpeg);
+}
+.card16 {
+  background-image: url(/images/moana.jpg);
+}
+.card17 {
+  background-image: url(/images/cindrella.jpg);
+}
+.card18 {
+  background-image: url(/images/Aladin.jpg);
+}
+h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+.card p {
+  text-shadow: 0 0 15px #000;
+  font-size: 9px;
+}
+hr {
+  width: 100%;
+  height: 3px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.306);
+}
+footer {
+  width: 100%;
+  height: 10vh;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.signbox {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(246, 241, 241, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(246, 241, 241, 0.29);
+}
+form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: none;
+  top: -100%;
+  padding: 55px;
+  display: flex;
+  flex-direction: column;
+}
+form h2 {
+  margin-top: 40px;
+  text-align: center;
+}
+form input {
+  height: 50px;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(246, 241, 241, 0.539);
+}
+::placeholder {
+  color: #fff;
+  opacity: 0.4;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+form input[type="button"] {
+  background: rgba(246, 241, 241, 0.362);
+  font-size: 15px;
+}
+.signbtn:hover {
+  background: rgba(246, 241, 241, 0.603);
+  font-size: 15px;
+}
+form input:focus {
+  outline: none;
+}
+form a {
+  color: #fff;
+}
+.bottomlink {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.main {
+  padding: 10px;
+  width: 50%;
+  height: 90%;
+  background-color: none;
+}
+@media only screen and (max-width: 420px) {
+  .container,
+  .container2 {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .welcome h1 {
+    font-size: 2em;
+  }
+  .welcome2 {
+    padding-left: 40px;
+  }
+  .navbar {
+    padding-left: 40px;
+  }
+  .logo {
+    width: 90px;
+  }
+  nav {
+    display: none;
+  }
+  .text2 {
+    width: 100%;
+  }
+  .welcome2 .text2 h1 {
+    font-size: 2em;
+  }
+  .gallery_container .gallery img {
+    width: 120px;
+    height: 90px;
+  }
+  .video_block {
+    padding: 20px 40px;
+  }
+  .video_block h2 {
+    font-size: 22px;
+  }
+  .video_block p {
+    font-size: 13px;
+  }
+  table {
+    font-size: 13px;
+  }
+  video {
+    width: 300px;
+    height: 200px;
+  }
+  .sidebar {
+    width: 100%;
+    height: 8%;
+    flex-direction: row;
+    top: 92%;
+    background-color: 1a1a1a;
+
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container,
+  .container2,
+  .container3 {
+    width: 100%;
+
+    padding-right: 20px;
+  }
+  .welcome h1 {
+    font-size: 2.5em;
+    line-height: 44px;
+  }
+
+  .sidebar {
+    padding: 30px;
+  }
+  .text2 {
+    width: 100%;
+  }
+  video {
+    width: 350px;
+    height: 320px;
+  }
+}
